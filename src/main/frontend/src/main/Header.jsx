@@ -55,7 +55,7 @@ const Header = styled.header`
    color: #9ca3af;  
    padding: 1.6rem 0;
    text-align: center;
-   font-size: 4rem;
+   font-size: 3rem;
    text-transform: uppercase;
 `;
 

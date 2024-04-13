@@ -14,5 +14,20 @@ const Button = styled.button`
       cursor: pointer;
    }
 `;
+export const ButtonDelete = styled(Button)`
+   color: var(--color-grey-100);
+   font-size: 1.6rem;
+   //width: 16rem;
+   border: none;
+   padding: 0 0.7rem;
+   border-radius: 50%;
+   background-color: var(--color-red-700);
+   transition: all 0.5s;
+   &:hover{
+      background-color: var(--color-red-800);
+      cursor: pointer;
+   }
+`;
+
 
 export default Button;

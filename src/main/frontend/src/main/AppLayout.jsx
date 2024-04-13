@@ -8,7 +8,7 @@ const StyledAppLayout = styled.div`
   height: 100vh;
   overflow: hidden;
 
-   @media screen  and (max-width: 984px) {
+   @media screen  and (max-width: 640px) {
       grid-template-columns: 1fr;
       grid-template-rows: auto 1fr;
       display: flex;
@@ -22,6 +22,7 @@ const MContainer = styled.div`
 
    background-color: var(--color-grey-800);
    overflow-y: hidden;
+    width: auto;
 
    @media screen  and (max-width: 984px) {
       grid-template-rows: auto 1fr auto;

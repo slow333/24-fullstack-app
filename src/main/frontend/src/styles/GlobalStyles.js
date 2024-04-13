@@ -121,8 +121,12 @@ const GlobalStyles = createGlobalStyle`
    }
 
    a {
-      color: inherit;
+      color: var(--color-green-100);
       text-decoration: none;
+       text-align: center;
+   }
+   a:hover {
+       background-color: #edc84b;
    }
 
    ul {
@@ -139,7 +143,15 @@ const GlobalStyles = createGlobalStyle`
       overflow-wrap: break-word;
       hyphens: auto;
    }
-
+   h1 {
+       font-size: 4rem;
+   }
+   h2 {
+       font-size: 3rem;
+   }
+   h3 {
+       font-size: 2rem;
+   }
    img {
       max-width: 100%;
 
