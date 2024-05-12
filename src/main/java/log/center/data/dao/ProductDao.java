@@ -9,5 +9,4 @@ public interface ProductDao {
     ProductEntity saveProduct(ProductEntity productEntity);
     List<ProductEntity> getAllProduct();
     void deleteProduct(Long productId);
-
 }

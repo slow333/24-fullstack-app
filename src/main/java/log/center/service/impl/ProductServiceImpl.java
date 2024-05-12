@@ -24,13 +24,12 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public ProductDto getProduct(Long productId) {
         ProductEntity productEntity = productDao.getProduct(productId);
-        ProductDto productDto = new ProductDto(
+      return new ProductDto(
                 productEntity.getProductId(),
                 productEntity.getProductName(),
                 productEntity.getProductCategory(),
                 productEntity.getProductPrice(),
                 productEntity.getProductStock());
-        return productDto;
     }
 
     @Override
@@ -38,13 +37,12 @@ public class ProductServiceImpl implements ProductService {
         ProductEntity productEntityToSave = new ProductEntity(productId, productName, productCategory, productPrice, productStock);
         ProductEntity productEntity = productDao.saveProduct(productEntityToSave);
 
-        ProductDto productDto = new ProductDto(
+      return new ProductDto(
                 productEntity.getProductId(),
                 productEntity.getProductName(),
                 productEntity.getProductCategory(),
                 productEntity.getProductPrice(),
                 productEntity.getProductStock());
-        return productDto;
     }
 
     @Override

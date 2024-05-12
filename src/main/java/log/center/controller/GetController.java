@@ -38,13 +38,12 @@ public class GetController {
             @RequestParam String email,
             @RequestParam String memo )
     {
-        return name + ": " + email + " => " + memo;
+        return "{name : " + name + ", email : " + email + ",memo: " + memo +"}";
     }
     // /request-param?name=okme&email=kalpa@gmail.com&key1=029&key2=2904&key...
     @GetMapping("/request-param-map")
     public String getRequestParam2(
-            @RequestParam Map<String, String> param
-    ){
+            @RequestParam Map<String, String> param  ){
         StringBuilder sb = new  StringBuilder();
         param.forEach((key, value) ->
                 sb.append("key : " + key + ", value : " + value + "\n"));
