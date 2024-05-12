@@ -13,10 +13,10 @@ const ContentFrame = styled.div`
    gap: 1rem;
    overflow: auto;
 
-    width: max-content;
-    max-width: 86rem;
-    min-width: 70rem;
-    word-break: break-all;
+    width: auto;
+    //max-width: 90rem;
+    //min-width: 90rem;
+    word-break: normal;
 `;
 
 export default ContentFrame;
